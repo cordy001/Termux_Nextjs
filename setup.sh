@@ -51,7 +51,11 @@ npm run build
 
 npm install
 
+mv next.sh next
 
+chmod +x next
+
+sudo mv next /usr/local/bin/next
 
 echo "
 -------
