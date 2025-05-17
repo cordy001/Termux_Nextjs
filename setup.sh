@@ -29,8 +29,11 @@ sudo apt install nodejs -y
 
 sudo apt install npm -y
 
+echo " "
 echo "npm version ---- " npm -v
 echo "npx version ---- " npx -v
+echo " "
+
 
 echo " "
 echo "##############################"
