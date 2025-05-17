@@ -19,6 +19,8 @@ echo " "
 
 sudo apt update
 
+sudo apt install zip -y
+
 echo " "
 echo "##############################"
 echo "Installing Nextjs"
@@ -57,19 +59,29 @@ Creating NextJs
 
 "
 
+cd ..
+
 File="/usr/local/bin/next"
 
-if [ -f "File" ]; then 
+if [ -f "$File" ]; then 
 
-echo "File Already Exist"
+echo "
+
+-------------------
+File Already Exist⚠️
+-------------------
+
+"
+
+rm -rf $File
+
+unzip next_start.zip -d /usr/local/bin
+
+echo "done."
 
 else
 
-cd ..
-
-chmod +x next
-
-sudo mv next /usr/local/bin
+unzip next_start.zip -d /usr/local/bin
 
 echo "done."
 
@@ -83,19 +95,23 @@ Don’t forget to follow me on Tiktok for more automation tools I will make in t
 -------
 "
 
-echo "Click Enter to Start the nextjs"
+read -p "Click Enter to Start the Demo Nextjs"
 
-read
+clear
 
 echo "
 -------
-Enter Next to Start Next Creator
+Enter next to Start Next Creator
 -------
 "
 
-echo "CTRL + C to stop"
+echo "
 
-echo "Starting Next Start"
+CTRL + C to stop
+
+"
+
+echo "Starting Next Start..."
 
 npm run start
 
