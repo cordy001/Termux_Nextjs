@@ -60,9 +60,6 @@ Don’t forget to follow me on Tiktok for more automation tools I will make in t
 -------
 "
 
-rm -rf Termux_Nextjs
-
-
 clear
 
 cd
