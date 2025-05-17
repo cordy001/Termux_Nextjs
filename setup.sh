@@ -56,6 +56,10 @@ echo "
 Don’t forget to follow me on Tiktok for more automation tools I will make in the future🧑‍💻🧑‍💻
 -------
 "
+cd
+
+rm -rf Termux_Nextjs
+
 
 clear
 
