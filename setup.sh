@@ -57,11 +57,25 @@ Creating NextJs
 
 "
 
+File="/usr/local/bin/next"
+
+if [ -f "File" ]; then 
+
+echo "File Already Exist"
+
+else
+
 cd ..
 
 chmod +x next
 
 sudo mv next /usr/local/bin
+
+echo "done."
+
+fi
+
+cd nextjs
 
 echo "
 -------
