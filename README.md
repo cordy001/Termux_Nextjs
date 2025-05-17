@@ -22,7 +22,7 @@ cd Termux_Nextjs
 ```
 
 ### TrebEdit Apk
-use TrebEdit for full user experience you can download it on playstore
+use TrebEdit for coding environment you can download it on playstore
 
 https://play.google.com/store/apps/details?id=com.teejay.trebedit
 
