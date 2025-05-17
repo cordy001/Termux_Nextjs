@@ -16,9 +16,16 @@ Clone my repository and this will
 setup automatically 
 
 ```sh
-git clone
-
+git clone https://github.com/cordy001/Termux_Nextjs.git
+cd Termux_Nextjs
+./setup.sh
 ```
+
+### TrebEdit Apk
+use TrebEdit for full user experience you can download it on playstore
+
+https://play.google.com/store/apps/details?id=com.teejay.trebedit
+
 
 
 
