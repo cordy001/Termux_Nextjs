@@ -53,7 +53,13 @@ npm install
 
 mv next.sh next
 
-sudo mv next /usr/local/bin/next
+echo "
+
+Creating NextJs
+
+"
+
+sudo mv next /usr/local/bin
 
 echo "
 -------
@@ -65,14 +71,15 @@ echo "Click Enter to Start the nextjs"
 
 read
 
-echo "Starting Next Start"
-
-npm run start
-
-echo "CTRL + C to stop"
-
 echo "
 -------
 Enter Next to Start Next Creator
 -------
 "
+
+echo "CTRL + C to stop"
+
+echo "Starting Next Start"
+
+npm run start
+
