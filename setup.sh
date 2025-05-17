@@ -21,7 +21,7 @@ sudo apt update
 
 echo " "
 echo "##############################"
-echo "Installaling Nextjs"
+echo "Installing Nextjs"
 echo "##############################"
 echo " "
 
@@ -30,8 +30,10 @@ sudo apt install nodejs -y
 sudo apt install npm -y
 
 echo " "
-echo "npm version ---- " npm -v
-echo "npx version ---- " npx -v
+echo "npm version ---- " 
+npm -v
+echo "npx version ---- " 
+npx -v
 echo " "
 
 
@@ -41,11 +43,15 @@ echo "Creating next environment"
 echo "##############################"
 echo " "
 
-mkdir nextjs
-
 cd nextjs
 
-npm init react-app@5.0.0 .
+npm install
+
+npm run build
+
+npm install
+
+
 
 echo "
 -------
@@ -53,15 +59,11 @@ Don’t forget to follow me on Tiktok for more automation tools I will make in t
 -------
 "
 
-clear
+echo "Click Enter to Start the nextjs"
 
-cd
+read
 
-echo " "
-echo "++++++++++++++++++++++++++++++"
-echo "Instructions------>"
-echo "Make a Directory"
-echo "example: mkdir nextjs then open it by typing cd nextjs"
-echo "then run npx create-next-app@latest ."
-echo " "
+echo "Starting Next Start"
+
+npm run start
 
