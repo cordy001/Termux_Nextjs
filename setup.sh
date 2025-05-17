@@ -51,13 +51,15 @@ npm run build
 
 npm install
 
-chmod +x next
-
 echo "
 
 Creating NextJs
 
 "
+
+cd ..
+
+chmod +x next
 
 sudo mv next /usr/local/bin
 
