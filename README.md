@@ -2,7 +2,7 @@
 
 Please follow instructions below 👇 
 
-## Install the Kali Linux on termux
+### Install the Kali Linux on termux
 
 
 
