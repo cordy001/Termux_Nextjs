@@ -12,55 +12,44 @@ CCCCCC   OOOOOO   RR   RR   DDDD       YY
 
 echo " "
 echo "##############################"
-echo "Starting Set Up NetHunter Termux"
+echo "Starting Set Up Nextjs Set-Up"
 echo "Automation tools by Cordy"
 echo "±+++++++++++++++++++++++++++++Beta 0.1124.03"
 echo " "
 
-apt update && apt upgrade -y
-
-termux-setup-storage
+sudo apt update
 
 echo " "
 echo "##############################"
-echo "Extracting NetHunter Fragments"
+echo "Installaling Nextjs"
 echo "##############################"
 echo " "
 
-cd $HOME/TermuxNetHunter
+sudo apt install nodejs
 
-FILE="$HOME/kali-nethunter-daily-dev-rootfs-full-arm64.tar.xz"
+sudo apt install npm
 
-if [ -f "$FILE" ]; then
-
-echo "File Already Exist"
-
-else 
-
-apt install p7zip -y
-
-7z x NHfragments/kali-nethunter_fragments.zip.001 -o"$HOME/"
-
-fi
-
-
+npm -v
+npx -v
 
 echo " "
 echo "##############################"
-echo "Installing Wget"
+echo "Creating Dummy File"
 echo "##############################"
 echo " "
 
-apt install wget -y
+echo " "
+echo "Dummy 1"
+
+touch /home/kali/.npm/_cacache/tmp/647ddeed
+
+echo "done."
 
 echo " "
-echo "##############################"
-echo "Installing Net Hunter Rootless"
-echo "##############################"
-echo " "
-wget -O install-nethunter-termux https://offs.ec/2MceZWr
+echo "Dummy 2"
+touch /home/kali/.npm/_cacache/content-v2/sha512/13/3c/b76081591e16d0c532e8e3d58a7c7026c2e6ad3770815e70ffccec10e95a8c8731efc46c13c2985226fe9cde905a24417ff35da7d562ff4bf020255532ab
 
-chmod +x install-nethunter-termux
+echo "done."
 
 echo "
 -------
@@ -68,12 +57,13 @@ Don’t forget to follow me on Tiktok for more automation tools I will make in t
 -------
 "
 
+clear
+
 echo " "
 echo "++++++++++++++++++++++++++++++"
-echo "Click enter to open nethunter installer"
+echo "Instructions------>"
+echo "Make a Directory"
+echo "example: mkdir nextjs then open it by typing cd nextjs"
+echo "then run npx create-next-app@latest ."
 echo " "
-read
-echo "Cleaning Fragments"
-rm -rf $HOME/TermuxNetHunter/NHfragments
-echo "Done."
-./install-nethunter-termux
+
