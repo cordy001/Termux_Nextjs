@@ -11,7 +11,14 @@ if you don't have kali linux please Download in this link or skip this if you ha
 https://github.com/cordy001/TermuxNetHunter.git
 
 
+### Clone Repo Automations 
+Clone my repository and this will 
+setup automatically 
 
+```sh
+git clone
+
+```
 
 
 
