@@ -21,7 +21,7 @@ cd Termux_Nextjs
 ./setup.sh
 ```
 
-### TrebEdit Apk
+### TrebEdit Apk (Recommend)
 use TrebEdit for coding environment you can download it on playstore
 
 https://play.google.com/store/apps/details?id=com.teejay.trebedit
