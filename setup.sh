@@ -53,8 +53,6 @@ npm install
 
 mv next.sh next
 
-chmod +x next
-
 sudo mv next /usr/local/bin/next
 
 echo "
@@ -71,3 +69,10 @@ echo "Starting Next Start"
 
 npm run start
 
+echo "CTRL + C to stop"
+
+echo "
+-------
+Enter Next to Start Next Creator
+-------
+"
