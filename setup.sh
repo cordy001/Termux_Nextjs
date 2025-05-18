@@ -144,11 +144,17 @@ else
 unzip next_start.zip -d /usr/local/bin
 
 echo "done."
+echo " "
 fi
+
+
 
 read -p "Click Enter to Start the Demo Nextjs"
 
+
 clear
+
+cd nextjs
 
 echo "
 manuals 
