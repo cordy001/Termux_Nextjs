@@ -60,6 +60,8 @@ echo "Creating next environment"
 echo "##############################"
 echo " "
 
+cd ..
+
 cd nextjs
 
 npm install
@@ -155,6 +157,12 @@ CTRL + C to stop
 --> npm run build
 --> npm run start
 
+"
+
+echo "
+-------
+Don’t forget to follow me on Tiktok for more automation tools I will make in the future🧑‍💻🧑‍💻
+-------
 "
 
 echo "Starting Next Start..."
