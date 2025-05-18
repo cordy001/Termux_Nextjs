@@ -1,5 +1,5 @@
 
-![node](https://cdn.freelogovectors.net/wp-content/uploads/2023/09/next-js-logo-freelogovectors.net_.png)
+![node](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uzqXvrqiIzLUG6zf7aEf07Qzk1ZV-ENWE3D7GZOCJHQ5Sby3yGZxo9E&s=10)
 
 ## Getting Started
 
