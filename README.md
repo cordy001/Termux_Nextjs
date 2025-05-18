@@ -26,8 +26,6 @@ use TrebEdit for coding environment you can download it on playstore
 
 https://play.google.com/store/apps/details?id=com.teejay.trebedit
 
-### Set Up Npx
-
 ### Privacy and Term of Use
 This project is provided for educational purposes only. By using this tool, you agree to the following:
 
