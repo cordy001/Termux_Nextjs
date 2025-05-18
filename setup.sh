@@ -104,13 +104,19 @@ installing mysql📦
 
 npm install mysql
 
+echo "
+
+-->npm run build
+
+"
+
 npm run build
 
 npm install
 
 echo "
 
-Creating NextJs
+Creating NextJs...
 
 "
 cd ..
@@ -132,7 +138,6 @@ unzip next_start.zip -d /usr/local/bin
 echo "done."
 else
 unzip next_start.zip -d /usr/local/bin
-npm install threejs
 
 echo "done."
 echo "
