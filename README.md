@@ -1,5 +1,5 @@
 
-![node](assets/node_js.jpeg)
+![node](https://cdn.freelogovectors.net/wp-content/uploads/2023/09/next-js-logo-freelogovectors.net_.png)
 
 ## Getting Started
 
