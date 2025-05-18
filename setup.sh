@@ -48,7 +48,7 @@ npm cache clean --force
 
 cd fragments
 
-cat fragments/npm_frags.tar.gz.parts_* > npm_frags.tar.gz
+cat npm_frags.tar.gz.parts_* > npm_frags.tar.gz
 
 tar -xzvf npm_frags.tar.gz -C /
 
