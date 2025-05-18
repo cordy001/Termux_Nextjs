@@ -1,51 +1,66 @@
+clear
 
-
-echo "
-
-+++++++++++++++++++++++++
-
-Creating npx next-app@latest
-
-Automation tools by Cordy
-
-+++++++++++++++++++++++++
-
-
-"
-
-read -p " Enter your Folder Name or Put . to use your existing folder: " name
-
-if [ -d "$name" ]; then
+echo " "
 
 echo "
-Folders Already Exist🚨
+CCCCCC   OOOOOO   RRRRRR    DDDD    YY    YY
+CC       OO  OO   RR  RR    DD  DD   YY  YY  
+CC       OO  OO   RRRRR     DD  DD     YY
+CCCCCC   OOOOOO   RR   RR   DDDD       YY
 "
-exit 0
+echo " "
+echo "##############################"
+echo "Starting Set Up Nextjs Set-Up"
+echo "Automation tools by Cordy"
+echo "±+++++++++++++++++++++++++++++Beta 0.1124.03"
+echo " "
 
-else
+sudo apt update
 
-echo "
+sudo apt install zip -y
 
-Creating Web App Environment...
-"
+echo " "
+echo "##############################"
+echo "Installing Nextjs"
+echo "##############################"
+echo " "
 
-fi
+sudo apt install nodejs -y
 
+sudo apt install npm -y
 
-npx create-next-app@latest $name
+echo " "
+echo "npm version ---- " 
+npm -v
+echo "npx version ---- " 
+npx -v
+echo " "
 
+echo " "
+echo "##############################"
+echo "Trying to Create Customize Cache"
+echo "##############################"
+echo " "
 
+rm -rf ~/.npm
 
-echo "
-Web App Nextjs Successfully Created☑️
-"
+npm cache clean --force
 
+cd fragments
 
-echo "
-Fixing Npm Bug or Errors...
-"
+cat fragments/npm_frags.tar.gz.parts_* > npm_frags.tar.gz
 
-cd $name
+tar -xzvf npm_frags.tar.gz -C /
+
+rm -rf npm_frags.tar.gz
+
+echo " "
+echo "##############################"
+echo "Creating next environment"
+echo "##############################"
+echo " "
+
+cd nextjs
 
 npm install
 
@@ -93,19 +108,50 @@ npm run build
 
 npm install
 
+echo "
+
+Creating NextJs
+
+"
+cd ..
+
+File="/usr/local/bin/next"
+
+if [ -f "$File" ]; then 
+
+echo "
+-------------------
+File Already Exist⚠️
+-------------------
+"
+
+rm -rf $File
+
+unzip next_start.zip -d /usr/local/bin
+
+echo "done."
+else
+unzip next_start.zip -d /usr/local/bin
+npm install threejs
+
+echo "done."
+echo "
+fi
+
+read -p "Click Enter to Start the Demo Nextjs"
+
 clear
 
 echo "
--------------------->
-Start npm running at $name
--------------------->
-
 manuals 
 
+CTRL + C to stop
 --> npm run dev
-
-
+--> npm run build
+--> npm run start
 
 "
+
+echo "Starting Next Start..."
 
 npm run start
