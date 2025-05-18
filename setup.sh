@@ -66,6 +66,8 @@ cd nextjs
 
 npm install
 
+npm install
+
 echo "
 
 installing React 🚀
@@ -88,7 +90,7 @@ installing threejs 🌳
 
 "
 
-npm install threejs
+npm install three
 
 echo "
 
