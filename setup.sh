@@ -1,117 +1,111 @@
 
-clear
-
-echo " "
 
 echo "
-CCCCCC   OOOOOO   RRRRRR    DDDD    YY    YY
-CC       OO  OO   RR  RR    DD  DD   YY  YY  
-CC       OO  OO   RRRRR     DD  DD     YY
-CCCCCC   OOOOOO   RR   RR   DDDD       YY
+
++++++++++++++++++++++++++
+
+Creating npx next-app@latest
+
+Automation tools by Cordy
+
++++++++++++++++++++++++++
+
+
 "
 
-echo " "
-echo "##############################"
-echo "Starting Set Up Nextjs Set-Up"
-echo "Automation tools by Cordy"
-echo "±+++++++++++++++++++++++++++++Beta 0.1124.03"
-echo " "
+read -p " Enter your Folder Name or Put . to use your existing folder: " name
 
-sudo apt update
+if [ -d "$name" ]; then
 
-sudo apt install zip -y
+echo "
+Folders Already Exist🚨
+"
+exit 0
 
-echo " "
-echo "##############################"
-echo "Installing Nextjs"
-echo "##############################"
-echo " "
+else
 
-sudo apt install nodejs -y
+echo "
 
-sudo apt install npm -y
+Creating Web App Environment...
+"
 
-echo " "
-echo "npm version ---- " 
-npm -v
-echo "npx version ---- " 
-npx -v
-echo " "
+fi
 
 
-echo " "
-echo "##############################"
-echo "Creating next environment"
-echo "##############################"
-echo " "
+npx create-next-app@latest $name
 
-cd nextjs
+
+
+echo "
+Web App Nextjs Successfully Created☑️
+"
+
+
+echo "
+Fixing Npm Bug or Errors...
+"
+
+cd $name
 
 npm install
+
+echo "
+
+installing React 🚀
+
+"
+
+npm install react
+
+echo "
+
+installing Express 🚚
+
+"
+
+npm install express 
+
+echo "
+
+installing threejs 🌳
+
+"
+
+npm install threejs
+
+echo "
+
+installing nodemailer ✉️
+
+"
+
+npm install nodemailer
+
+echo "
+
+installing mysql📦
+
+"
+
+npm install mysql
 
 npm run build
 
 npm install
 
-echo "
-
-Creating NextJs
-
-"
-
-cd ..
-
-File="/usr/local/bin/next"
-
-if [ -f "$File" ]; then 
-
-echo "
-
--------------------
-File Already Exist⚠️
--------------------
-
-"
-
-rm -rf $File
-
-unzip next_start.zip -d /usr/local/bin
-
-echo "done."
-
-else
-
-unzip next_start.zip -d /usr/local/bin
-
-echo "done."
-
-fi
-
-cd nextjs
-
-echo "
--------
-Don’t forget to follow me on Tiktok for more automation tools I will make in the future🧑‍💻🧑‍💻
--------
-"
-
-read -p "Click Enter to Start the Demo Nextjs"
-
 clear
 
 echo "
--------
-Enter next to Start Next Creator
--------
+-------------------->
+Start npm running at $name
+-------------------->
+
+manuals 
+
+--> npm run dev
+
+
+
 "
-
-echo "
-
-CTRL + C to stop
-
-"
-
-echo "Starting Next Start..."
 
 npm run start
-
