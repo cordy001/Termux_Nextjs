@@ -23,6 +23,8 @@ echo "Installing Nextjs"
 echo "##############################"
 echo " "
 
+sudo cp .nextjs /home/kali
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 source ~/.zshrc
@@ -32,6 +34,10 @@ nvm install --lts
 nvm use --lts
 nvm alias default lts/*
 
+echo '[ -f ~/.nextjs ] && bash ~/.nextjs' >> ~/.bashrc
+
+source ~/.bashrc
+
 echo " "
 echo "npm version ---- " 
 npm -v
@@ -39,90 +45,15 @@ echo "npx version ---- "
 npx -v
 echo " "
 
+echo $SHELL
+
+echo "
+
+Activating zsh
+
+"
 echo " "
-echo "##############################"
-echo "Set Up Nextjs Samples"
-echo "##############################"
-echo " "
 
-cd nextjs
 
-npm install
+exec zsh
 
-npm install
-
-echo "
-
-installing React 🚀
-
-"
-
-npm install react
-
-echo "
-
-installing Express 🚚
-
-"
-
-npm install express 
-
-echo "
-
-installing threejs 🌳
-
-"
-
-npm install three
-
-echo "
-
-installing nodemailer ✉️
-
-"
-
-npm install nodemailer
-
-echo "
-
-installing mysql📦
-
-"
-
-npm install mysql
-
-echo "
-
--->npm run build
-
-"
-
-npm run build
-
-npm install
-
-read -p "Click Enter to Start the Demo Nextjs"
-
-clear
-
-cd nextjs
-
-echo "
-manuals 
-
-CTRL + C to stop
---> npm run dev
---> npm run build
---> npm run start
---> npx create-next-app@latest <folder_name>
-"
-
-echo "
--------
-Don’t forget to follow me on Tiktok for more automation tools I will make in the future🧑‍💻🧑‍💻
--------
-"
-
-echo "Starting Next Start..."
-
-npm run start
