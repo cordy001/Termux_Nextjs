@@ -47,13 +47,3 @@ echo " "
 
 echo $SHELL
 
-echo "
-
-Activating zsh
-
-"
-echo " "
-
-
-exec zsh
-
