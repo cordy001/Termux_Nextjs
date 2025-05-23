@@ -17,17 +17,20 @@ echo " "
 
 sudo apt update
 
-sudo apt install zip -y
-
 echo " "
 echo "##############################"
 echo "Installing Nextjs"
 echo "##############################"
 echo " "
 
-sudo apt install nodejs -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
-sudo apt install npm -y
+source ~/.zshrc
+
+nvm install --lts
+
+nvm use --lts
+nvm alias default lts/*
 
 echo " "
 echo "npm version ---- " 
@@ -38,29 +41,9 @@ echo " "
 
 echo " "
 echo "##############################"
-echo "Trying to Create Customize Cache"
+echo "Set Up Nextjs Samples"
 echo "##############################"
 echo " "
-
-rm -rf ~/.npm
-
-npm cache clean --force
-
-cd fragments
-
-cat npm_frags.tar.gz.parts_* > npm_frags.tar.gz
-
-tar -xzvf npm_frags.tar.gz -C /
-
-rm -rf npm_frags.tar.gz
-
-echo " "
-echo "##############################"
-echo "Creating next environment"
-echo "##############################"
-echo " "
-
-cd ..
 
 cd nextjs
 
@@ -131,7 +114,7 @@ if [ -f "$File" ]; then
 
 echo "
 -------------------
-File Already Exist⚠️
+File Already Exist🚨
 -------------------
 "
 
@@ -147,10 +130,7 @@ echo "done."
 echo " "
 fi
 
-
-
 read -p "Click Enter to Start the Demo Nextjs"
-
 
 clear
 
