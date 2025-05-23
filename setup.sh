@@ -101,35 +101,6 @@ npm run build
 
 npm install
 
-echo "
-
-Creating NextJs...
-
-"
-cd ..
-
-File="/usr/local/bin/next"
-
-if [ -f "$File" ]; then 
-
-echo "
--------------------
-File Already Exist🚨
--------------------
-"
-
-rm -rf $File
-
-unzip next_start.zip -d /usr/local/bin
-
-echo "done."
-else
-unzip next_start.zip -d /usr/local/bin
-
-echo "done."
-echo " "
-fi
-
 read -p "Click Enter to Start the Demo Nextjs"
 
 clear
@@ -143,7 +114,7 @@ CTRL + C to stop
 --> npm run dev
 --> npm run build
 --> npm run start
-
+--> npx create-next-app@latest <folder_name>
 "
 
 echo "
