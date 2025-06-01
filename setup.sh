@@ -23,6 +23,10 @@ echo "Installing Nextjs"
 echo "##############################"
 echo " "
 
+sudo apt install nodejs
+
+sudo apt install npm
+
 sudo npm install -g n
 
 sudo n latest
