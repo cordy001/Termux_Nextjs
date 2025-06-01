@@ -23,16 +23,9 @@ echo "Installing Nextjs"
 echo "##############################"
 echo " "
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+sudo npm install -g n
 
-nvm install --lts
-
-nvm use --lts
-nvm alias default lts/*
-
-echo '[ -f ~/.nextjs ] && bash ~/.nextjs' >> ~/.bashrc
-
-source ~/.bashrc
+sudo n latest
 
 echo " "
 echo "npm version ---- " 
@@ -40,6 +33,4 @@ npm -v
 echo "npx version ---- " 
 npx -v
 echo " "
-
-echo $SHELL
 
